@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skate Church ATL</title>
-    <link rel="stylesheet" href="styles.css">
     <!-- Standard favicon -->
-    <link rel="icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <!-- Favicon links -->
-    <link rel="icon" href="assets/favicon_io/android-chrome-192x192.png" sizes="192x192" type="image/png">
-    <link rel="icon" href="assets/favicon_io/android-chrome-512x512.png" sizes="512x512" type="image/png">
+    <!-- <link rel="icon" href="favicon_io/android-chrome-192x192.png" sizes="192x192" type="image/png"> -->
+    <!-- <link rel="icon" href="favicon_io/android-chrome-512x512.png" sizes="512x512" type="image/png"> -->
     
     <!-- Manifest -->
-    <link rel="manifest" href="/manifest.json">
+    <!-- <link rel="manifest" href="favicon_io/site.webmanifest"> -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
         <div class="container">
             
-            <img id="logo" class="logo" src="assets/logoRED.png" alt="Skate Church ATL in flames" >
+            <img id="logo" class="logo" src="assets/logo.png" alt="Skate Church ATL in flames" >
             <img class="wheels" src="assets/wheelsRED.png" alt="Wheels with broken horns on the pentagram">
            
-            <h2>Brook Run Skate Park</h2>
-            <p>4770 North Peachtree Road Dunwoody, GA 30338</p>
+            <div  class="center-text">
+                <h2>Brook Run Skate Park</h2>
+            <p>4770 North Peachtree Road<br>Dunwoody, GA 30338</p>
             <p>First & third Friday of every month</p>
             <p>Next sesh coming up on <span id="event-date"></span></p>
-            <p>We skate before & after! (park closes at 11PM)</p>
+            <p>We skate before & after!<br>(park closes at 11PM but since the fire the lights have not been working)</p>
+            </div>
             
             
 
@@ -63,8 +65,17 @@
     <footer>
         
         <div class="footer-container">
-            <a href="https://www.instagram.com/sk8churchatl/"><img class="social-media-img" src="assets/instagram.png" alt="Instagram"></a>
-            <p>UNRTHDX MVMNT &copy; <span id="year"></span></p>
+        
+                <div>
+                    <a href="https://www.instagram.com/sk8churchatl/"><img class="social-media-img" src="assets/instagram.png" alt="Instagram Link"></a>
+                </div>
+            <div>
+                <a href="https://www.unrthdxmvmnt.org/"><img class="un-logo" src="assets/unrthdxmvmntLogo.png" alt="Unrthdx Mvmnt Website Link></a>
+            </div>
+        
+            
+            <div class="footer-link-container><p class="copyright">Unrthdx Mvmnt &copy; <span id="year"></span></p> </div>
+            
         </div>
 
     </footer>

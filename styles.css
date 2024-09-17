@@ -5,20 +5,21 @@
   --color-flame-secondary: rgb(85, 30, 9);
 }
 
-
-
-
-
-html, body {
+html,
+body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   width: 100%;
 
-
   background-color: #000000;
   color: #ffffff;
   line-height: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* For other elements that might cause horizontal overflow */
@@ -26,10 +27,6 @@ html, body {
   box-sizing: border-box;
   max-width: 100%;
 }
-
-
-
-
 
 main {
   background-image: url("/assets/IMG_9215.png");
@@ -75,6 +72,7 @@ footer {
 .social-media-img {
   max-width: 40px;
   height: auto;
+  margin-bottom: 16px;;
 }
 
 .countdown-container {
@@ -128,23 +126,71 @@ footer {
 }
 
 .map-responsive:hover iframe {
-    
-    opacity: 1;
-  }
+  opacity: 1;
+}
+
+.un-logo {
+  max-height: 30px;
+  width: auto;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 8px;
+  padding-bottom: 4px;
+}
+
+.copyright {
+  font-size: 10px;
+  letter-spacing: 1px;;
+  color: #ffffff !important;
+}
 
 
 
+.center-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.underline-hov-link {
+  display: inline-block;
+  position: relative;
+}
+.underline-hov-link:after {
+  background: #fff;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.underline-hov-link:hover:after {
+  width: 100%;
+  left: 0;
+}
 
 /* Medium screens (tablets, small desktops) */
 @media (min-width: 768px) {
-    .map-responsive {
-        width: 70%;
-    }
+  .map-responsive {
+    width: 70%;
+  }
 }
 
 /* Large screens (desktops, larger monitors) */
 @media (min-width: 1200px) {
-    .map-responsive {
-        width: 50%;
-    }
+  .map-responsive {
+    width: 50%;
+  }
 }

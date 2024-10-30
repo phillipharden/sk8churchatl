@@ -1,3 +1,8 @@
+if (window.location.pathname === '/newhere') {
+    window.location.replace('/new-here.html');
+  }
+
+
 document.getElementById("year").textContent = new Date().getFullYear();
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -9,41 +9,27 @@
         <!-- Favicon links -->
         <link rel="icon" href="favicon_io/android-chrome-192x192.png" sizes="192x192" type="image/png">
         <link rel="icon" href="favicon_io/android-chrome-512x512.png" sizes="512x512" type="image/png">
-
         <!-- For Apple touch icon (for iOS devices) -->
-<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-
-
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
         <!-- Manifest -->
         <link rel="manifest" href="favicon_io/site.webmanifest">
         <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
         <main>
-               <div class="container">
-
-                <img id="logo" class="logo" src="assets/logo.png"
-                    alt="Skate Church ATL in flames">
-                        <img class="wheels" src="assets/wheelsRED.png"
-                    alt="Wheels with broken horns on the pentagram">
-
+            <div class="container">
+                <img id="logo" class="logo" src="assets/logo.png" alt="Skate Church ATL in flames" 
+                <img id="wheels" class="wheels" src="assets/wheelsRED.png" alt="Wheels with broken horns on the pentagram">
                 <div class="center-text">
                     <h2>Brook Run Skate Park</h2>
-                    <p>4770 North Peachtree Road<br>Dunwoody, GA 30338</p>
-                    <!-- <p>First & third Friday of every month</p> -->
+                    <p id="address">4770 North Peachtree Road Dunwoody, GA 30338</p>
+                    <p>First & third Friday of every month</p>
                     <p>Next sesh coming up on <span id="event-date"></span> at 7:30PM</p>
-                    <p>We skate before & after so come EARLY!<br>(park closes at 11PM)</p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxj9sjJdmoUue1CN5IFxhFp4LHzoOfwoQUl7OAeWFGBQcCgA/viewform?usp=pp_url" class="first-guest">First Time Guest!?</a>
-                  
-                   
-           
-           
-
-
+                    <p>We skate before & after!<br>(park closes at 11PM)</p>
+                    <a id="new-here-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdxj9sjJdmoUue1CN5IFxhFp4LHzoOfwoQUl7OAeWFGBQcCgA/viewform?usp=pp_url">First Time Guest!?</a>
                 </div>
-
                 <div class="countdown-container">
-
                     <div id="countdown">
                         <div class="time-box">
                             <span id="days">00</span>
@@ -52,9 +38,6 @@
                         <div class="time-box">
                             <span id="hours">00</span>
                             <span class="label">Hours</span>
-
-                          
-                         
                         </div>
                         <div class="time-box">
                             <span id="minutes">00</span>
@@ -65,41 +48,19 @@
                             <span class="label">Seconds</span>
                         </div>
                     </div>
-                  
-
                 </div>
                 <div class="map-responsive">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.259571214587!2d-84.29908862350533!3d33.934451373201675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50a272d70cb4b%3A0x82c5756546cde937!2s4770%20N%20Peachtree%20Rd%2C%20Dunwoody%2C%20GA%2030338!5e0!3m2!1sen!2sus!4v1724289790921!5m2!1sen!2sus"
-                        style="border:0;" allowfullscreen loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.259571214587!2d-84.29908862350533!3d33.934451373201675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50a272d70cb4b%3A0x82c5756546cde937!2s4770%20N%20Peachtree%20Rd%2C%20Dunwoody%2C%20GA%2030338!5e0!3m2!1sen!2sus!4v1724289790921!5m2!1sen!2sus" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
             </div>
         </main>
-        <footer class="footer">
-
+        <footer id="footer" class="footer">
             <div class="footer-container">
-
-              
-                    <a href="https://www.instagram.com/sk8churchatl/"><img
-                            class="social-media-img" src="assets/instagram.png"
-                            alt="Instagram Link"></a>
-           
-
-         
-                    <a href="https://www.unrthdxmvmnt.org/"><img class="un-logo"
-                            src="assets/unrthdxmvmntLogo.png"
-                            alt="Unrthdx Mvmnt Website Link"></a>
-            
-
-               
-                    <p class="copyright">Unrthdx
-                        Mvmnt &copy; <span id="year"></span></p>
-            
-
+                <a href="https://www.instagram.com/sk8churchatl/"><img class="social-media-img" src="assets/instagram.png" alt="Instagram Link"></a>
+                <a href="https://www.unrthdxmvmnt.org/"><img class="un-logo" src="assets/unrthdxmvmntLogo.png" alt="Unrthdx Mvmnt Website Link"></a>
+                <p class="copyright">Unrthdx
+                    Mvmnt &copy; <span id="year"></span></p>
             </div>
-
         </footer>
         <script src="script.js""></script>
     </body>

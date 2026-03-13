@@ -1,4 +1,15 @@
-.home-map {
-    max-width: 250px;
 
+
+.map-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.home-map {
+    width: 100%;
+    max-width: 250px;
+    border: 0;
+    border-radius: 12px;
 }

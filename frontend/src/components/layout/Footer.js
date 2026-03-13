@@ -1,4 +1,5 @@
 import "../../styles/layout.css";
+import AnimatedButton from "../ui/AnimatedButton";
 import FooterLogo from "../../assets/images/unrthdx-logo.png";
 
 const Footer = () => {
@@ -6,6 +7,14 @@ const Footer = () => {
     return (
         <footer>
             <div className="container footer-container">
+               <div className="p-4">
+                    <AnimatedButton
+                        text="Partner with us"
+                        href="https://www.paypal.com/donate/?hosted_button_id=Y32B38CV24PMY"
+                        target="_blank"
+                        rel="noreferrer"
+                    />
+               </div>
               
                 <div>
                     <img src={FooterLogo} alt="Unthdx Logo" className="footer-logo" />

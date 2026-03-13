@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../../styles/layout.css";
-import Logo from "../../assets/images/sk8-logo.png";
 
 import { IoShareSocial } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -18,36 +17,27 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
 
-                {/* Logo */}
-                <div className="logo">
-                    <img src={Logo} alt="Skate Church ATL logo" />
-                </div>
+               
 
                 {/* Main Navigation */}
                 <ul className={`main-nav ${showNavMenu ? "active" : ""}`}>
-                    <li>
-                        <a href="#music">Music</a>
-                    </li>
+                   
 
-                    <li>
-                        <a href="#videos">Videos</a>
-                    </li>
-
-                    <li>
+                    {/* <li>
                         <a href="#about">About</a>
-                    </li>
+                    </li> */}
 
-                    <li>
+                    {/* <li>
                         <a href="#events">Events</a>
-                    </li>
+                    </li> */}
 
                     <li>
                         <a
-                            href="https://13thdesciple.bandcamp.com/merch"
+                            href="https://www.paypal.com/donate/?hosted_button_id=Y32B38CV24PMY"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Merch
+                            Partner With Us
                         </a>
                     </li>
                 </ul>

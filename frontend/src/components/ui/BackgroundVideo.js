@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import "../../styles/ui.css";
-import Video from "../../assets/videos/1.mp4";
 
-const BackgroundVideo = () => {
+const BackgroundVideo = ({ videoSrc }) => {
     const [showVideo, setShowVideo] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => setShowVideo(true), 100);
         return () => clearTimeout(timer);
     }, []);
+
+    if (!showVideo) return null;
 
     return (
         <div className="video-container">
@@ -18,10 +19,12 @@ const BackgroundVideo = () => {
                 muted
                 playsInline
                 preload="auto"
-                className="background-video">
-                <source src={Video} type="video/mp4" />
+                className="background-video"
+            >
+                <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
+
             <div className="video-overlay" />
         </div>
     );

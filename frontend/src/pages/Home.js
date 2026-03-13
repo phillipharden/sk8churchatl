@@ -3,12 +3,16 @@ import EventCountdown from "../components/ui/EventCountdown";
 import MapEmbed from "../components/ui/MapEmbed";
 import AnimatedButton from "../components/ui/AnimatedButton";
 import Logo from "../assets/images/sk8-logo.png";
-
+import BackgroundVideo from "../components/ui/BackgroundVideo";
+import BGVideo from "../assets/videos/1.mp4";
 
 const Home = () => {
     return (
-        <div>
-            <div className="container text-center">
+        <div className="home-page">
+            
+            <BackgroundVideo videoSrc={BGVideo} />
+
+            <div className="container text-center home-content">
                 <div>
                     <div className="hero-logo p-4">
                         <img src={Logo} alt="Skate Church ATL logo" className="mx-auto" />

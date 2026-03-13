@@ -1,3 +1,41 @@
+.site-header.skate {
+    background: black;
+    color: white;
+}
+
+.site-header.unthrdx {
+    background: #111;
+    color: red;
+}
+
+.site-footer.skate {
+    background: black;
+}
+
+.site-footer.unthrdx {
+    background: #111;
+}
+
+
+
+
+
+.home-page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+
 
 
 .map-wrap {
@@ -12,4 +50,255 @@
     max-width: 250px;
     border: 0;
     border-radius: 12px;
+}
+
+
+/*^ Unrthdx Hero Section  */
+
+
+
+
+
+
+
+
+/*^ About Section  */
+.unrthdx-story {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(255, 94, 20, 0.12), transparent 28%),
+        linear-gradient(135deg, #2b2422 0%, #4a413d 100%);
+}
+
+.unrthdx-story__image-wrap {
+    position: relative;
+}
+
+.unrthdx-story__glow {
+    position: absolute;
+    inset: auto auto -20px -20px;
+    width: 220px;
+    height: 220px;
+    background: rgba(255, 94, 20, 0.2);
+    filter: blur(60px);
+    z-index: 0;
+}
+
+.unrthdx-story__image {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    transform: rotate(-2deg);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.unrthdx-story__image:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45);
+}
+
+.unrthdx-story__content {
+    max-width: 520px;
+}
+
+.unrthdx-story__eyebrow {
+    margin-bottom: 0.75rem;
+    color: #ff5e14;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.unrthdx-story__title {
+    margin-bottom: 1.25rem;
+    color: #ff5e14;
+    font-size: clamp(2rem, 4vw, 3.75rem);
+    line-height: 0.95;
+    text-transform: uppercase;
+    text-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.unrthdx-story__text {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+
+
+
+
+/*^ Skate Church Section  */
+
+
+/* .skate-story {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.08), transparent 26%),
+        linear-gradient(135deg, #151515 0%, #252525 100%);
+} */
+
+.skate-story {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(rgba(21, 21, 21, 0.85),
+                rgba(37, 37, 37, 0.85)),
+        radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.08), transparent 26%),
+        url("../assets/images/1.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.skate-story__content {
+    max-width: 540px;
+}
+
+.skate-story__eyebrow {
+    margin-bottom: 0.75rem;
+    color: #ff5e14;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.skate-story__title {
+    margin-bottom: 1.25rem;
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+    text-shadow: 0 6px 20px rgba(0, 0, 0, 0.65);
+}
+
+.skate-story__text {
+    margin: 0 0 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.skate-story__image-wrap {
+    position: relative;
+}
+
+.skate-story__glow {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 220px;
+    height: 220px;
+    background: rgba(255, 94, 20, 0.18);
+    filter: blur(60px);
+    z-index: 0;
+}
+
+.skate-story__image {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    transform: rotate(2deg);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.skate-story__image:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45);
+}
+
+
+
+
+
+/*^ Founders.  */
+
+.founders-story {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 30%, rgba(255, 94, 20, 0.08), transparent 28%),
+        linear-gradient(135deg, #3a3331 0%, #514845 100%);
+}
+
+.founders-story__image-wrap {
+    position: relative;
+}
+
+.founders-story__glow {
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: 220px;
+    height: 220px;
+    background: rgba(255, 94, 20, 0.18);
+    filter: blur(60px);
+    z-index: 0;
+}
+
+.founders-story__image {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.founders-story__image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45);
+}
+
+.founders-story__content {
+    max-width: 760px;
+}
+
+.founders-story__eyebrow {
+    margin-bottom: 0.75rem;
+    color: #ff5e14;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.founders-story__title {
+    margin-bottom: 1.25rem;
+    color: #ff5e14;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+    text-shadow: 0 6px 20px rgba(0, 0, 0, 0.75);
+}
+
+.founders-story__text {
+    margin: 0 0 1.25rem;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.founders-story__signature {
+    margin-top: 1rem;
+    color: #ffb08a;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }

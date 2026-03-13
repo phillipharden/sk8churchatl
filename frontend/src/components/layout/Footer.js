@@ -13,6 +13,7 @@ const Footer = () => {
                         href="https://www.paypal.com/donate/?hosted_button_id=Y32B38CV24PMY"
                         target="_blank"
                         rel="noreferrer"
+                        classes="animated-btn"
                     />
                </div>
               

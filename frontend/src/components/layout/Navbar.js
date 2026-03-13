@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import "../../styles/layout.css";
-
+import { Link, useLocation } from "react-router-dom";
 import { IoShareSocial } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
-
 import { socialLinks } from "../../data/socialLinks";
 
 const Navbar = () => {
+    const location = useLocation();
+    const isUnrthdx = location.pathname === "/unrthdx";
+
+
     const [showSocialMenu, setShowSocialMenu] = useState(false);
     const [showNavMenu, setShowNavMenu] = useState(false);
 
@@ -16,33 +19,16 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-
-               
-
-                {/* Main Navigation */}
                 <ul className={`main-nav ${showNavMenu ? "active" : ""}`}>
-                   
-
-                    {/* <li>
-                        <a href="#about">About</a>
-                    </li> */}
-
-                    {/* <li>
-                        <a href="#events">Events</a>
-                    </li> */}
-
+                                     
                     <li>
-                        <a
-                            href="https://www.paypal.com/donate/?hosted_button_id=Y32B38CV24PMY"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Partner With Us
-                        </a>
+                        <Link to={isUnrthdx ? "/" : "/unrthdx"} className="btn switch-link">
+                            {isUnrthdx ? "Skate Church" : "Unrthdx"}
+                        </Link>
                     </li>
-                </ul>
 
-                {/* Social Links (dynamic) */}
+                   
+                </ul>
                 <ul className={`social-links ${showSocialMenu ? "active" : ""}`}>
                     {socialLinks
                         .filter((link) => link.url)
@@ -65,10 +51,7 @@ const Navbar = () => {
                         })}
                 </ul>
             </div>
-
-            {/* Mobile toggles */}
             <div>
-                {/* Nav menu toggle */}
                 <div
                     className="hamburger nav-toggle"
                     onClick={toggleNavMenu}
@@ -76,8 +59,6 @@ const Navbar = () => {
                 >
                     <GiHamburgerMenu />
                 </div>
-
-                {/* Social menu toggle */}
                 <div
                     className="hamburger social-toggle"
                     onClick={toggleSocialMenu}

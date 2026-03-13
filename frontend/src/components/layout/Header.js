@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import "../../styles/layout.css";
 
 const Header = () => {
     return (
